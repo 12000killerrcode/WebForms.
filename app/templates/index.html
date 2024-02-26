@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                Tinker Online Mall
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                You pay we deliver.
+            </p>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/ESQUIRE.jpg') }}">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/watch2.jpg') }}">
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                ESQUIRE WATCH :KSH 500
+                casual watch.
+            </p>
+
+        </div>
+        <div class="col-md-6">
+            <p>
+                ROLEX SMART :KSH 1000
+                the business man watch.
+            </p>
+
+        </div>
+    </div>
+     
+        
+   
+{% endblock %}
