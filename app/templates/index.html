@@ -2,43 +2,50 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md- 9">
+            <img src="{{ url_for('static', filename='images/RES2.png') }}">
+        </div>
+
+        <div class="col-md-3">
+           
             <p>
-                TINKER ONLINE MALL
+                Username: {{ current_user.username }}
+            </p>
+                
         </div>
     
         </div>
     </div>    
     <div class="row">
         <div class="col-md-4">
-            <img src="{{ url_for('static', filename='images/ESQUIRE.jpg') }}">
+            <img src="{{ url_for('static', filename='images/resh1.jfif') }}">
         </div>
         <div class="col-md-4">
-            <img src="{{ url_for('static', filename='images/watch2.jpg') }}">
+            <img src="{{ url_for('static', filename='images/resh2.jfif') }}">
         </div>
         <div class="col-md-4">
-            <img src="{{ url_for('static', filename='images/iphone.jpg') }}">
+            <img src="{{ url_for('static', filename='images/resh3.jfif') }}">
         </div>
     </div> 
     <div class="row">
         <div class="col-md-4">
             <p>
-                ESQUIRE WATCH :KSH 500
-                casual watch.
+                
+                
             </p>
 
         </div>
         <div class="col-md-4">
             <p>
-                ROLEX SMART :KSH 1000
-                the business man watch.
+                
+                
             </p>
 
         </div>
         <div class="col-md-4">
             <p>
-                Iphone :KSH 10,000
-                the phone you need.
+            
+                
             </p>
 
         </div>

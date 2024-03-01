@@ -3,7 +3,7 @@
 {% block content %}
     <div class="row">
         <div class="col-md-4">
-            <p>REGISTER TO TODAY TO ACCESS AND SELL PRODUCTS.</p>
+            <p></p>
         </div>
         <div class="col-md-4">
             <form action="" method="post" navalidate>
@@ -27,34 +27,19 @@
                     {% endfor %}    
                 </p>
                 <p>
-                    {{ form.remember_me () }}
-                    {{ form.remember_me.label }}
+                    {{ form.confirm_password.label }}<br>
+                    {{ form.confirm_password(size=32) }}<br>
+                    {% for error in form.confirm_password.errors %}
+                        <span style="color: red;">
+                            {{ error }}
+                        </span>
+                    {% endfor %}    
                 </p>
+                
                 <p>
                     {{ form.submit() }}
                 </p>
             </form>
-        </div>
-
-        <div class="col-md-4">
-            <!--Empty column-->
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <!--Empty column-->
-               
-            </div>
-        </div>
-        <div class="col-md-4">
-            <p>
-                Already registered why not Login.
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <!--Empty column-->
-               
-            </div>
         </div>
     </div>
 

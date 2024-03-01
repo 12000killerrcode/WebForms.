@@ -31,6 +31,9 @@
                     {{ form.remember_me.label }}
                 </p>
                 <p>
+                    New here? Why not <hl><a href="{{ url_for('register') }}">Register</a></hl>
+                </p>
+                <p>
                     {{ form.submit() }}
                 </p>
             </form>

@@ -20,19 +20,20 @@
         <div class="container text-center">
             <!--link-->
             <div class="row">
-                <div class="col-md-3">
-                    <h1><a href=" {{ url_for('index') }}">Shop</a></h1>                    
-                </div> 
-                <div class="col-md-3">
-                    <h1><a href="{{ url_for('register') }}">Register</a></h1>
-                </div>
-                <div class="col-md-3">
-                    <h1><a href="{{ url_for('login') }}">Login</a></h1>
-                </div>  
-                <div class="col-md-3">
-                    <h1><a href="{{ url_for('add_product') }}">Add Product</a></h1>
+                
 
-                </div>           
+                <div class="col-md-6">
+                    <h1><a href=" {{ url_for('index') }}">REAL ESTATE.</a></h1>                    
+                </div> 
+                
+                <div class="col-md-6">
+                    {% if current_user.is_authenticated %}
+                        <h1><a href=" {{ url_for('logout') }} ">Logout</a></h1>
+                    {% else %}
+                        <h1><a href=" {{ url_for('login') }} ">Login</a></h1>
+                    {% endif %}    
+                </div>  
+                          
             </div>
             <hr>
 
